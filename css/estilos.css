@@ -1,0 +1,1019 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container__pag{
+    width: 576px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif ; ;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    background-color: aqua;
+    height: 120px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 120px;
+    border-bottom: 4px solid rgb(238, 195, 5);
+    background-color: black;
+}
+
+.icono{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10PX;
+    left: 255px;
+    z-index: 100;
+}
+
+.header__nav__ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.li{
+    list-style-type: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.li :hover{
+    color: rgb(238, 195, 5);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ /*   ACA COMIENZA CSS PARA INDEX*/
+.main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.titulo__index{
+    font-size: 40px;
+    color: rgb(238, 195, 5);
+    text-transform: uppercase;
+    margin:40px  12px;
+}
+
+.main__presentacion{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.descripcion{
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 220px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+.icono__descripcion{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(238, 195, 5);
+    position: relative;
+    left: 180px;
+    
+}
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.historiasVs{
+    font-size:30px ;
+    text-transform: uppercase;
+    color: rgb(238, 195, 5);
+    margin: 30px 0px;
+}
+
+.video1{
+    margin: 25px 0;
+}
+.video2{
+    margin: 25px 0;
+}
+.video3{
+    margin: 25px 0;
+}
+.video4{
+    margin: 25px 0 60px 0;
+}
+
+
+footer{
+    grid-area: footer;
+    border-top: 4px solid rgb(238, 195, 5);
+    color: rgb(238, 195, 5);
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+/*   ACA COMIENZA CSS PARA HISTORIAS*/
+
+.container__pag__historias{
+    width: 576px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif ; 
+}
+.main__historias{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.titulo__pag__container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.titulo__historias{
+    color: rgb(238, 195, 5);
+    font-size: 70px;
+}
+.container__article{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+.article__historias1{
+    margin-top: 50px;
+}
+.article__historias2{
+    margin-top: 50px;
+}
+.article__historias3{
+    margin-top: 50px;
+}
+.article__historias4{
+    margin-top: 50px;
+}
+.article__historias5{
+    margin-top: 50px;
+}
+.article__historias6{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.fotojugadores{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 1px 2px 10px 0 rgb(238, 195, 5);
+}
+.nombreFutbolista{
+    color: rgb(238, 195, 5);
+}
+.posicionFutbolista{
+    color: white;
+}
+.conoce__historia{
+    color: rgb(238, 195, 5);
+    text-decoration: underline ;
+}
+
+/* ACA COMIENZA CSS PARA NOTICIAS  */
+
+.container__pag__noticias{
+    width: 576px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif ; 
+}
+
+.main__noticias{
+    grid-area: main ;
+    width: 576px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo__noticias{
+    color: rgb(238, 195, 5);
+    font-size: 70px;
+    margin: 40px 0px;
+}
+
+.containerNoticias{
+    width: 536px;
+    border: 2px solid rgb(238, 195, 5);
+    box-shadow: 3px 6px 0 rgb(238, 195, 5);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 20px 40px 20px;
+
+}
+.div__contenido__noticias{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    justify-content: flex-start;
+}
+.containerNoticias__titulo{
+    color: rgb(238, 195, 5);
+    font-size:  20px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.containerNoticias__parrafo{
+    color: white;
+    width: 419px;
+}
+
+.foto__noticias{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+
+/* ACA COMIENZA CSS PARA NOSOTROS  */
+.container__pag__nosotros{
+    width: 576px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif ; ;
+}
+
+.main__nosotros{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 576px;
+    background-color: black;
+    justify-content: center;
+}
+
+.container__nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo__nosotros{
+    color: rgb(238, 195, 5);
+    font-size: 50px;
+    padding: 40px;
+}
+
+.descripcion__nosotros{
+    color: white;
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.titulos__nosotros2{
+    color: rgb(238, 195, 5);
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.img__manager1{
+    width: 200px;
+    height: 200px;
+}
+
+.img__manager2{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.titulos__nosotros3{
+    color: rgb(238, 195, 5);
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.mapa{
+    width: 500px;
+    height: 300px;
+    margin:40px 0px;
+}
+
+
+/*  ACA COMIENZA EL CSS DE CONTACTO    */
+
+.container__pag__contacto{
+    width: 576px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" ;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif ; ;
+}
+
+.main__contacto{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 576px;
+    background-color: black;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.container__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.titulo__contacto{
+    color: rgb(238, 195, 5);
+    font-size: 40px;
+    padding: 10px;
+}
+
+.redes{
+    color: white;
+    padding: 5px;
+}
+
+
+
+.container__form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.titulo__buscamos{
+    color: rgb(238, 195, 5);
+    font-size: 40px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgb(238, 195, 5);
+    box-shadow: 3px 6px 0 rgb(238, 195, 5) ;
+    margin-top: 40px;
+}
+
+.container__input{
+    margin: 10px;
+}
+
+.input{
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-bottom: 3px solid rgb(238, 195, 5);
+    color: white;
+    background-color: black;
+}
+
+.input__textarea{
+    height: 150px;
+    width: 400px;
+    border: none;
+    border-bottom: 3px solid rgb(238, 195, 5);
+    color: white;
+    background-color: black;
+    resize: none;
+}
+
+.input__boton{
+    width: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 3px solid rgb(238, 195, 5);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+    /*  ACA COMIENZA CSS PARA INDEX*/
+    .container__pag{
+        width: 768px;
+}
+    
+    .icono{
+        left: 350px;
+    }
+    
+    
+    
+    .li{
+        margin: 0px 28px;
+        font-size: 17px;
+    }
+    
+    
+    
+    .titulo__index{
+        font-size: 50px;
+        margin-left: 40px;
+    }
+    
+    
+    .descripcion{
+        margin-top: 320px;
+        margin-left: -305px;
+    }
+    
+    .icono__descripcion{
+        height: 300px;
+        width: 300px;
+        left: 230px;
+    }
+    .videos__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .historiasVs{
+        font-size:45px ;
+        text-transform: uppercase;
+        color: rgb(238, 195, 5);
+        margin: 100px 0px 60px 0px;
+        text-align: center;
+    }
+    
+    .video1{
+        margin: 15px 0;
+        height: 400px;
+        width: 600px;
+    }
+    .video2{
+        margin: 15px 0;
+        height: 400px;
+        width: 600px;
+    }
+    .video3{
+        margin: 15px 0;
+        height: 400px;
+        width: 600px;
+    }
+    .video4{
+        margin: 15px 0 60px 0;
+        height: 400px;
+        width: 600px;
+    }
+    /*  ACA COMIENZA CSS PARA HISTORIAS   */
+    
+    .container__pag__historias{
+        width: 768px;
+    }
+
+    .main__historias{
+        width: 768px;
+    }
+    .titulo__pag__container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .titulo__historias{
+        color: rgb(238, 195, 5);
+        font-size: 80px;
+    }
+    .container__article{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }   
+    .article__historias1{
+        margin-top: 20px;
+    }
+    .article__historias2{
+        margin-top: 20px;
+    }
+    .article__historias3{
+        margin-top: 0px;
+    }
+    .article__historias4{
+        margin-top: 0px;
+    }
+    .article__historias5{
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    .article__historias6{
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+
+    /* ACA COMIENZA CSS PARA NOTICIAS   */
+
+    .container__pag__noticias{
+        width: 768px;
+    }
+    
+    .main__noticias{
+        width: 768px;
+    }
+
+    .titulo__noticias{
+        font-size: 90px;
+        margin: 50px 0px;
+    }
+    
+    .containerNoticias{
+        width: 746px;
+        border: 2px solid rgb(238, 195, 5);
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 20px 40px 20px;
+    
+    }
+
+    .div__contenido__noticias{
+        margin: 0px 10px;
+    }
+    .containerNoticias__titulo{
+        font-size:  26px;
+        margin: 10px;
+
+    }
+    
+    .containerNoticias__parrafo{
+
+        width: 610px;
+    }
+    
+    .foto__noticias{
+        width: 110px;
+        height: 110px;
+    }
+
+    /*  ACA COMIENZA CSS PARA NOSOTROS   */
+
+
+    .container__pag__nosotros{
+        width: 768px;
+    }
+    
+    .main__nosotros{
+        width: 768px;
+    }
+
+    .titulo__nosotros{
+        font-size: 70px;
+    }
+
+    .descripcion__nosotros{
+        font-size: 24px;
+    }
+
+    .titulos__nosotros2{
+        font-size: 40px;
+    }
+
+    .img__manager1{
+        width: 300px ;
+        height: 300px;
+    }
+
+    .img__manager2{
+        width: 300px ;
+        height: 300px;
+    }
+
+    .titulos__nosotros3{
+        font-size: 40px;
+    }
+
+    .mapa{
+        width: 600px;
+        height: 400px;
+    }
+
+
+    /*  ACA COMIENZA CSS PARA CONTACTO   */
+
+    .container__pag__contacto{
+        width: 768px;
+    }
+
+    .main__contacto{
+        width: 768px;
+    }
+
+
+    .titulo__contacto{
+        font-size: 70px;
+        padding: 10px 10px 15px 10px;
+    }
+    
+    .redes{
+        font-size: 24px;
+    }
+    
+    
+    
+    .container__form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .titulo__buscamos{
+        font-size: 50px;
+    }
+    
+    
+    .input{
+        width: 530px;
+    }
+    
+    .input__textarea{
+        width: 530px;
+    }
+    
+    .input__boton{
+        width: 70px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-bottom: 3px solid rgb(238, 195, 5);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:1024px){
+    
+    /*  ACA COMIENZA CSS PARA INDEX */
+
+    .container__pag{
+        background-color: black;
+        width: 1024px;
+    }
+    .header{
+        grid-area: header;
+        display: flex;
+        background-color: black;
+        height: 120px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 120px;
+        border-bottom: 4px solid rgb(238, 195, 5);
+        background-color: black;
+    }
+    
+    .icono{
+        width: 90px;
+        height: 110px;
+        border-radius: 0%;
+        position:relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        justify-content: flex-start;
+    }
+    
+    .header__nav__ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .li{
+        list-style-type: none;
+        padding: 10px;
+        margin: 4px;
+        font-size: 16px;
+    }
+    
+    .li :hover{
+        color: rgb(238, 195, 5);
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    .titulo__index{
+        font-size: 70px;
+        margin-left: 30px;
+        
+    }
+    
+    .main__presentacion{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+    .descripcion{
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+        margin-top: 420px;
+        text-align: center;
+        margin-left: -350px;
+    }
+    
+    .icono__descripcion{
+        width: 350px;
+        height: 350px;
+        border: 2px solid rgb(238, 195, 5);
+        position: relative;
+        left: 340px;
+        
+    }
+    .videos__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    .historiasVs{
+        font-size:55px ;
+        text-transform: uppercase;
+        color: rgb(238, 195, 5);
+        margin: 100px 150px 60px 150px;
+        text-align: center;
+        
+    }
+    
+    .video1{
+        width: 400px;
+        height: 250px;
+    }
+    .video2{
+        width: 400px;
+        height: 250px;
+    }
+    .video3{
+        width: 400px;
+        height: 250px;
+    }
+    .video4{
+        width: 400px;
+        height: 250px;
+    }
+    /* ACA COMIENZA CSS PARA HISTORIAS  */
+
+    .container__pag__historias{
+        width: 1024px;
+    }
+
+    .main__historias{
+        width: 1024px;
+    }
+    .titulo__pag__container{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .titulo__historias{
+        color: rgb(238, 195, 5);
+        font-size: 100px;
+    }
+
+    .container__article{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+
+    .fotojugadores{
+        width:350px ;
+        height: 350px;
+    }
+
+
+    /*   ACA COMIENZA CSS PARA NOTICIAS  */
+
+    .container__pag__noticias{
+        width: 1024px;
+    }
+    
+    .main__noticias{
+        width: 1024px;
+    }
+
+    .titulo__noticias{
+        font-size: 110px;
+        margin: 50px 0px;
+    }
+    
+    .containerNoticias{
+        width: 880px;
+        border: 2px solid rgb(238, 195, 5);
+        height: 236px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 20px 40px 20px;
+    
+    }
+
+    .div__contenido__noticias{
+        margin: 0px 10px;
+    }
+    .containerNoticias__titulo{
+        font-size:  34px;
+        margin: 20px;
+
+    }
+    
+    .containerNoticias__parrafo{
+        width: 724px;
+        font-size:22px ;
+    }
+    
+    .foto__noticias{
+        width: 130px;
+        height: 130px;
+    }
+
+
+
+    /* ACA COMIENZA CSS PARA NOSOTROS   */
+
+    .container__nosotros{
+        width: 1024px;
+    }
+
+    .main__nosotros{
+        width: 1024px;
+    }
+
+    .titulo__nosotros{
+        font-size: 90px;
+    }
+
+    .descripcion__nosotros{
+        font-size: 27px;
+    }
+
+    .titulos__nosotros2{
+        font-size: 50px;
+    }
+
+    .img__manager1{
+        width: 400px ;
+        height: 400px;
+    }
+
+    .img__manager2{
+        width: 400px ;
+        height: 400px;
+    }
+
+    .titulos__nosotros3{
+        font-size: 50px;
+    }
+
+    .mapa{
+        width: 800px;
+        height: 400px;
+    }
+
+
+    /*  ACA COMIENZA CSS PARA CONTACTO */
+
+    .container__pag__contacto{
+        width: 1024px;
+    }
+
+    .main__contacto{
+        width: 1024px;
+    }
+
+    .titulo__contacto{
+        font-size: 90px;
+        padding: 10px 10px 15px 10px;
+    }
+    
+    .redes{
+        font-size: 28px;
+    }
+    
+    
+    
+    .container__form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .titulo__buscamos{
+        font-size: 60px;
+    }
+    
+    
+    .input{
+        width: 750px;
+    }
+    
+    .input__textarea{
+        width: 750px;
+    }
+    
+    .input__boton{
+        width: 70px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-bottom: 3px solid rgb(238, 195, 5);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
