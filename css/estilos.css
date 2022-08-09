@@ -74,7 +74,7 @@ a{
     background-image: linear-gradient(to top, #856f08, #736208, #615507, #514907, #413c06, #3c3205, #362804, #2f1f03, #2a1707, #21100a, #150808, #000000);
 }
 
-.animate__animated , animate__zoomInDown{
+.titulo__index{
     font-size: 40px;
     color: rgb(238, 195, 5);
     text-transform: uppercase;
@@ -172,7 +172,7 @@ footer{
     flex-wrap: wrap;
     
 }
-.animate__animated , animate__backInUp{
+.titulo__pag__historias{
     color: rgb(238, 195, 5);
     font-size: 70px;
 }
@@ -241,7 +241,7 @@ footer{
     background-image: linear-gradient(to top, #856f08, #736208, #615507, #514907, #413c06, #3c3205, #362804, #2f1f03, #2a1707, #21100a, #150808, #000000);
 }
 
-.animate__animated , animate__zoomInDown{
+.titulo__pag__noticias{
     color: rgb(238, 195, 5);
     font-size: 70px;
     margin: 40px 0px;
@@ -311,7 +311,7 @@ footer{
     flex-direction: column;
 }
 
-.animate__animated , animate__wobble{
+.titulo__pag__nosotros{
     color: rgb(238, 195, 5);
     font-size: 50px;
     padding: 40px;
@@ -394,7 +394,7 @@ footer{
     margin: 50px 0px;
 }
 
-.animate__animated , animate__backInRight{
+.titulo__pag__contacto{
     color: rgb(238, 195, 5);
     font-size: 40px;
     padding: 10px;
@@ -415,7 +415,7 @@ footer{
     margin-bottom: 70px;
 }
 
-.animate__animated , animate__backInLeft{
+.titulo__buscamos{
     color: rgb(238, 195, 5);
     font-size: 40px;
 }
@@ -483,7 +483,7 @@ footer{
     
     
     
-    .animate__animated , animate__zoomInDown{
+    .titulo__index{
         font-size: 50px;
         margin-left: 40px;
     }
@@ -546,7 +546,7 @@ footer{
         flex-wrap: wrap;
         
     }
-    .animate__animated , animate__backInUp{
+    .titulo__pag__historias{
         color: rgb(238, 195, 5);
         font-size: 80px;
     }
@@ -588,7 +588,7 @@ footer{
         width: 768px;
     }
 
-    .animate__animated , animate__zoomInDown{
+    .titulo__pag__noticias{
         font-size: 90px;
         margin: 50px 0px;
     }
@@ -634,7 +634,7 @@ footer{
         width: 768px;
     }
 
-    .animate__animated , animate__wobble{
+    .titulo__pag__nosotros{
         font-size: 70px;
     }
 
@@ -677,7 +677,7 @@ footer{
     }
 
 
-    .animate__animated , animate__backInRight{
+    .titulo__pag__contacto{
         font-size: 70px;
         padding: 10px 10px 15px 10px;
     }
@@ -696,7 +696,7 @@ footer{
         margin-bottom: 70px;
     }
     
-    .animate__animated , animate__backInLeft{
+    .titulo__buscamos{
         font-size: 50px;
     }
     
@@ -790,7 +790,7 @@ footer{
         
     }
     
-    .animate__animated , animate__zoomInDown{
+    .titulo__index{
         font-size: 70px;
         margin-left: 30px;
         
@@ -865,7 +865,7 @@ footer{
         flex-wrap: wrap;
         
     }
-    .animate__animated , animate__backInUp{
+    .titulo__pag__historias{
         color: rgb(238, 195, 5);
         font-size: 100px;
     }
@@ -895,7 +895,7 @@ footer{
         width: 1024px;
     }
 
-    .animate__animated , animate__zoomInDown{
+    .titulo__pag__noticias{
         font-size: 110px;
         margin: 50px 0px;
     }
@@ -942,7 +942,7 @@ footer{
         width: 1024px;
     }
 
-    .animate__animated , animate__wobble{
+    .titulo__pag__nosotros{
         font-size: 90px;
     }
 
@@ -984,7 +984,7 @@ footer{
         width: 1024px;
     }
 
-    .animate__animated , animate__backInRight{
+    .titulo__pag__contacto{
         font-size: 90px;
         padding: 10px 10px 15px 10px;
     }
@@ -1003,7 +1003,7 @@ footer{
         margin-bottom: 70px;
     }
     
-    .animate__animated , animate__backInLeft{
+    .titulo__buscamos{
         font-size: 60px;
     }
     
