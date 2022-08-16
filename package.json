@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "entrega proyecto sass",
   "main": "index.js",
-  "scripts": {
-    "build-css": "node-sass --include-path scss scss/estilossass.scss css/estilos.css",
+  "scripts": {"build-css": "node-sass --include-path scss scss/estilossass.scss css/estilos.css",
   "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
