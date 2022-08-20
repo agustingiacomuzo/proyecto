@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import "mediaqueries.scss";
+
 
 
 *{
@@ -8,7 +8,17 @@
     box-sizing: border-box;
 }
 
+$mains: (
+    color:black,
+    gradiente:linear-gradient(to top, #856f08, #736208, #615507, #514907, #413c06, #3c3205, #362804, #2f1f03, #2a1707, #21100a, #150808, #000000),
+);
 
+@mixin flex-column-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
    
 .navbar{
     background-color: black;
@@ -55,11 +65,8 @@
 
 
 .main{
+    @include flex-column-center-center;
     background-color:black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-image: $estilo-gradiente;
     .titulo__index{
         color: $color-titulo;
@@ -70,10 +77,7 @@
         text-align: center;
     }
     .main__presentacion{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column-center-center;
             .icono__descripcion{
                 width: 300px;
                 height: 300px;
@@ -89,11 +93,8 @@
             }
         }
     .videos__contenedor{
-        display: flex;
-        flex-direction: column;
+        @include flex-column-center-center;
         text-align: center;
-        align-items: center;
-        justify-content: center;
         flex-wrap: wrap;
             .historiasVs{
                 color: $color-titulo;
@@ -124,11 +125,8 @@
     border-top: 3px solid $color-titulo;
 }
 .main__noticias{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-column-center-center;
     background-color: black;
-    flex-direction: column;
     background-image: $estilo-gradiente;
     .titulo__pag__noticias{
         color: $color-titulo;
@@ -173,16 +171,14 @@
 }
 
 
-
-
 .main__contacto{
-    background-color: #000000;
-    background-image: $estilo-gradiente;
+    background-color: map-get($mains,color);
+    background-image: map-get($mains, gradiente);
     .contenedor__contacto{
         .titulo__contacto{
             color: $color-titulo;
             margin: 0;
-            padding: 20px 0px;
+            padding: 30px 0px;
             font-size: 60px;
             font-family: $tipografia;
             text-align: center;
@@ -194,10 +190,7 @@
         }
     }
     .contenedor__formulario{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @include flex-column-center-center;
         .buscamos{
             color: $color-titulo;
             font-size: 40px;
@@ -222,8 +215,8 @@
             .boton{
                 background-color: black;
                 color: $color-titulo;
-                padding: 8px;
-                margin: 10px 0px 30px 0px;
+                padding: 14px 8px;
+                margin: 20px 0px 30px 0px;
             }
         }
         
@@ -241,16 +234,12 @@
 }
 
 
-
 .main__nosotros{
     background-color: black;
     font-family: $tipografia;
     background-image: $estilo-gradiente;
     .contenedor__nosotros{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @include flex-column-center-center;
         padding-bottom: 50px;
         .titulo__nosotros1{
             color: $color-titulo;
@@ -265,9 +254,8 @@
             margin: 30px;
         }
         .titulo__nosotros2{
-            color: $color-titulo;
-            text-align: center;
-            font-size: 38px;
+            @extend .titulo__nosotros1;
+            font-size: 38px
         }
         .img__manager1{
             width: 300px;
@@ -282,15 +270,13 @@
             margin-top: 10px;
         }
         .titulo__nosotros3{
-            color: $color-titulo;
-            text-align: center;
+            @extend .titulo__nosotros1;
             font-size: 38px;
-            margin: 30px 20px;
         }
-            .mapa{
-                width: 300px;
-                height: 200px;
-            }
+        .mapa{
+            width: 300px;
+            height: 200px;
+        }
     }
 }
 
@@ -298,10 +284,7 @@
 .main__historias{
     font-family: $tipografia;
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
     background-image: $estilo-gradiente;
     .titulo__pag__contenedor{
         .titulo__historias{
@@ -336,6 +319,8 @@
         }
     }
 }
+
+@import "mediaqueries.scss";
 
 
 
