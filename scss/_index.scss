@@ -1,0 +1,46 @@
+.main{
+    @include flex-column-center-center;
+    background-color:black;
+    background-image: $estilo-gradiente;
+    .titulo__index{
+        color: $color-titulo;
+        font-family: $tipografia  ;
+        font-size: 50px;
+        font-weight: 800px;
+        margin:40px 0px 40px 0px;
+        text-align: center;
+    }
+    .main__presentacion{
+        @include flex-column-center-center;
+            .icono__descripcion{
+                width: 300px;
+                height: 300px;
+                border: 1px solid $color-titulo;
+                margin-bottom: 40px;
+            }
+            .descripcion{
+                color: $color-texto;
+                font-family: $tipografia  ;
+                font-size: 20px;
+                text-align: center;
+                margin: 0px 20px 0px 20px;
+            }
+        }
+    .videos__contenedor{
+        @include flex-column-center-center;
+        text-align: center;
+        flex-wrap: wrap;
+            .historiasVs{
+                color: $color-titulo;
+                font-size: 40px;
+                font-weight: 800px;
+                font-family: $tipografia  ;
+                margin:40px 0px 30px 0px;
+            }
+            .video{
+                    width: 400px;
+                    height: 300px;
+                    margin: 30px;
+            }
+    }   
+}

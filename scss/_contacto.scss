@@ -1,0 +1,62 @@
+.main__contacto{
+    background-color: map-get($mains,color);
+    background-image: map-get($mains, gradiente);
+    .contenedor__contacto{
+        .titulo__contacto{
+            color: $color-titulo;
+            margin: 0;
+            padding: 30px 0px;
+            font-size: 60px;
+            font-family: $tipografia;
+            text-align: center;
+        }
+        .redes{
+            color: $color-texto;
+            text-align: center;
+            font-family: $tipografia;
+        }
+    }
+    .contenedor__formulario{
+        @include flex-column-center-center;
+        padding-bottom: 20px;
+        .buscamos{
+            color: $color-titulo;
+            font-size: 40px;
+            font-family: $tipografia;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .formulario{
+            border: 1px solid $color-titulo;
+            width: 70%;
+            margin: 6px;
+            background-color: black;
+        }
+        
+        .input{
+            background-color: black;
+            resize: none;
+            #floatingInput{
+                background-color: rgba(0, 0, 0, 0);
+                color: $color-texto;
+            }
+            .boton{
+                background-color: black;
+                color: $color-titulo;
+                padding: 14px 8px;
+                margin: 20px 0px 30px 0px;
+            }
+        }
+        
+        label{
+            font-family: $tipografia;
+            background-color: black;
+            width: 100%;
+            color: $color-texto;
+            #floatingTextarea2{
+                background-color: none;
+                color: $color-texto;
+            }
+        }
+    }
+}

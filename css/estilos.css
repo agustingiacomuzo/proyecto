@@ -34,6 +34,19 @@
       font-size: 24px;
       color: #eac205; }
 
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: #ecc305;
+  font-weight: 800px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border-top: 3px solid #ecc305; }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -81,19 +94,6 @@
       width: 400px;
       height: 300px;
       margin: 30px; }
-
-.footer {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: black;
-  color: #ecc305;
-  font-weight: 800px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  border-top: 3px solid #ecc305; }
 
 .main__noticias {
   display: flex;
@@ -152,7 +152,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 20px; }
     .main__contacto .contenedor__formulario .buscamos {
       color: #ecc305;
       font-size: 40px;

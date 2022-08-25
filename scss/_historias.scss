@@ -1,0 +1,38 @@
+.main__historias{
+    font-family: $tipografia;
+    background-color: black;
+    @include flex-column-center-center;
+    background-image: $estilo-gradiente;
+    .titulo__pag__contenedor{
+        .titulo__historias{
+            text-align: center;
+            color: $color-titulo;
+            font-size: 62px ;
+            padding: 40px 0px;
+        }
+    }
+    .contenedor__article{
+        .article__historias{
+            margin:40px 0px;
+            .fotojugadores{
+                width: 300px;
+                height: 250px;
+                object-fit: cover;
+                box-shadow: 3px 6px 15px 0 black;
+            }
+            .nombreFutbolista{
+                color: $color-titulo;
+                margin: 10px 0 0 0;
+            }
+            
+            .posicionFutbolista{
+                color: $color-texto;
+                margin: 0;
+            }
+            .conoce__historia{
+                color: $color-texto;
+                margin: 0;
+            }
+        }
+    }
+}
